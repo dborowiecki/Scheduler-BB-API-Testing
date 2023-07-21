@@ -7,9 +7,12 @@ services:
     ports:
       - "3000:3000"
     networks:
-      host:
+      demo:
     volumes:
       - type: bind
-        source: ../../../api/Scheduler_Updated_Latest_OpenAPI_Spec.json    
+        source: ../../api/Scheduler_Updated_Latest_OpenAPI_Spec.json    
         target: /data 
 
+networks:
+  demo:
+    driver: bridge 
