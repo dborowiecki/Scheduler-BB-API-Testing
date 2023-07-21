@@ -5,7 +5,7 @@ services:
     command: -d /data # this is where the change takes place
     container_name: myapi
     ports:
-      - "3000:3000"
+      - "8888:3000"
     networks:
       demo:
     volumes:
