@@ -27,3 +27,4 @@ docker-compose up --build
 
 mkdir -p ./result
 cp ./test_data/results.json ./result/example_result.message
+
